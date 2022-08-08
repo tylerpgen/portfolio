@@ -23,7 +23,7 @@ const Navbar = () => {
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLinkContainer>
-            <NavbarLink to="/">Home</NavbarLink>
+            <NavbarLink to="/portfolio">Home</NavbarLink>
             <NavbarLink to="/about">About Me</NavbarLink>
             <NavbarLink to="/projects">Projects</NavbarLink>
             <NavbarLink to="/contact">Contact</NavbarLink>
@@ -37,22 +37,28 @@ const Navbar = () => {
           </NavbarLinkContainer>
         </LeftContainer>
         <RightContainer>
-          <LogoLink to="/">
+          <LogoLink to="/portfolio">
             <Logo src={LogoImg}></Logo>
           </LogoLink>
         </RightContainer>
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtended onClick="window.location.reload();" to="/">
+          <NavbarLinkExtended
+            onClick="window.location.reload();"
+            to="/portfolio"
+          >
             Home
           </NavbarLinkExtended>
-          <NavbarLinkExtended onClick="window.location.reload();" to="/about">
+          <NavbarLinkExtended
+            onClick="window.location.reload();"
+            to="/portfolio/about"
+          >
             About Me
           </NavbarLinkExtended>
           <NavbarLinkExtended
             onClick="window.location.reload();"
-            to="/projects"
+            to="/portfolio/projects"
           >
             Projects
           </NavbarLinkExtended>

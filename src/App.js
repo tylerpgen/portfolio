@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/portfolio" exact element={<Home />} />
           <Route path="/about" />
           <Route path="/projects" />
           <Route path="/contact" />
