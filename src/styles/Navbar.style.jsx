@@ -7,8 +7,9 @@ export const NavbarContainer = styled.nav`
   background-color: ${(props) =>
     props.extendNavbar ? "rgba(0,0,0, 0.9)" : "#000"};
   display: flex;
-  position: ${(props) => (props.extendNavbar ? "absolute" : "fixed")};
+  position: fixed;
   flex-direction: column;
+  z-index: 3;
 
   @media screen and (min-width: 730px) {
     height: 80px;
@@ -66,8 +67,8 @@ export const NavbarLinkContainer = styled.div`
 export const NavbarLink = styled(Link)`
   color: white;
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 400;
   text-decoration: none;
   margin: 10px 25px;
   cursor: pointer;
@@ -86,7 +87,7 @@ export const LogoLink = styled(Link)``;
 export const NavbarLinkExtended = styled(Link)`
   color: white;
   font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 2rem;
   text-decoration: none;
   margin: 40px 0;

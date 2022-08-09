@@ -4,7 +4,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Container = styled.div`
-  background-color: #b5c1d8;
   width: 100%;
   height: 100vh;
 `;
@@ -17,11 +16,11 @@ const HeaderContainer = styled.div`
 `;
 
 const NameHeader = styled.h1`
-  font-family: "Heebo", sans-serif;
-  font-weight: 900;
-  font-size: 4rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
   color: #000;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   padding: 10px;
   margin-top: 230px;
 
@@ -51,12 +50,12 @@ const NameHeader = styled.h1`
   }
 
   @media screen and (max-width: 400px) {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 200px;
   }
 
   @media screen and (max-width: 325px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 150px;
   }
 `;
@@ -64,7 +63,8 @@ const NameHeader = styled.h1`
 const TagHeader = styled.h2`
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  margin-top: 30px;
   -webkit-animation: fadein 3s;
   animation: fadein 3s;
 
@@ -134,7 +134,7 @@ const Home = () => {
   return (
     <Container>
       <HeaderContainer>
-        <NameHeader>Tyler Gener</NameHeader>
+        <NameHeader>TYLER GENER</NameHeader>
         <TagHeader>
           <i>Front End Developer</i>
         </TagHeader>

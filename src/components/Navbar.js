@@ -25,7 +25,7 @@ const Navbar = () => {
           <NavbarLinkContainer>
             <NavbarLink to="/portfolio">Home</NavbarLink>
             <NavbarLink to="/about">About Me</NavbarLink>
-            <NavbarLink to="/projects">Projects</NavbarLink>
+            <NavbarLink to="/portfolio/projects">Projects</NavbarLink>
             <NavbarLink to="/contact">Contact</NavbarLink>
             <OpenLinksBtn
               onClick={() => {
