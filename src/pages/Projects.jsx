@@ -18,11 +18,11 @@ const HeaderContainer = styled.div`
 const Header = styled.h1`
   font-family: "Titillium Web", sans-serif;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3.2rem;
   text-decoration: underline;
   letter-spacing: 5px;
   color: #000;
-  margin-top: 80px;
+  margin-top: 20px;
 `;
 
 const DescContainer = styled.div`

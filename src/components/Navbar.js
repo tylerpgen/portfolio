@@ -1,18 +1,14 @@
 import { useState } from "react";
-import LogoImg from "../assets/logo.png";
 import { Turn as Hamburger } from "hamburger-react";
 import {
   NavbarContainer,
   LeftContainer,
-  RightContainer,
   NavbarInnerContainer,
   NavbarLinkContainer,
   NavbarLink,
-  Logo,
   OpenLinksBtn,
   NavbarExtendedContainer,
   NavbarLinkExtended,
-  LogoLink,
 } from "../styles/Navbar.style";
 
 const Navbar = () => {
@@ -23,42 +19,31 @@ const Navbar = () => {
       <NavbarInnerContainer>
         <LeftContainer>
           <NavbarLinkContainer>
-            <NavbarLink to="/portfolio">Home</NavbarLink>
+            <NavbarLink to="/">Home</NavbarLink>
             <NavbarLink to="/about">About Me</NavbarLink>
-            <NavbarLink to="/portfolio/projects">Projects</NavbarLink>
+            <NavbarLink to="/projects">Projects</NavbarLink>
             <NavbarLink to="/contact">Contact</NavbarLink>
             <OpenLinksBtn
               onClick={() => {
                 setExtendNavbar((curr) => !curr);
               }}
             >
-              <Hamburger size={44} color="#fff" direction="right" rounded />
+              <Hamburger size={44} color="#000" direction="right" rounded />
             </OpenLinksBtn>
           </NavbarLinkContainer>
         </LeftContainer>
-        <RightContainer>
-          <LogoLink to="/portfolio">
-            <Logo src={LogoImg}></Logo>
-          </LogoLink>
-        </RightContainer>
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtended
-            onClick="window.location.reload();"
-            to="/portfolio"
-          >
+          <NavbarLinkExtended onClick="window.location.reload();" to="/">
             Home
           </NavbarLinkExtended>
-          <NavbarLinkExtended
-            onClick="window.location.reload();"
-            to="/portfolio/about"
-          >
+          <NavbarLinkExtended onClick="window.location.reload();" to="/about">
             About Me
           </NavbarLinkExtended>
           <NavbarLinkExtended
             onClick="window.location.reload();"
-            to="/portfolio/projects"
+            to="/projects"
           >
             Projects
           </NavbarLinkExtended>

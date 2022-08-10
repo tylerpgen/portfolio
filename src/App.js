@@ -1,18 +1,19 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import AnimatedNav from "./components/AnimatedNav";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <AnimatedNav />
         <Routes>
-          <Route path="/portfolio" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" />
-          <Route path="/portfolio/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" />
         </Routes>
       </BrowserRouter>

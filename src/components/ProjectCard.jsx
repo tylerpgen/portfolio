@@ -3,8 +3,6 @@ import {
   ImageLink,
   ProjectContainer,
   ProjectImage,
-  ProjectTitle,
-  ProjectTitleContainer,
 } from "../styles/ProjectCard.style";
 
 const Projects = (props) => {
@@ -18,9 +16,6 @@ const Projects = (props) => {
         >
           <ProjectImage src={props.img} />
         </ImageLink>
-        <ProjectTitleContainer>
-          <ProjectTitle>LN Personal Training</ProjectTitle>
-        </ProjectTitleContainer>
       </ProjectContainer>
     </Container>
   );

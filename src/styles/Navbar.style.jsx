@@ -3,9 +3,16 @@ import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.nav`
   width: 100%;
-  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
-  background-color: ${(props) =>
-    props.extendNavbar ? "rgba(0,0,0, 0.9)" : "#000"};
+  height: ${(props) => (props.extendNavbar ? "100vh" : "40px")};
+  background: ${(props) =>
+    props.extendNavbar
+      ? "linear-gradient(to bottom, #E4E5E6, #00416A);"
+      : "none"};
+  background: ${(props) =>
+    props.extendNavbar
+      ? "-webkit-linear-gradient(to bottom, #00416a, #e4e5e6);"
+      : "none"};
+
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -19,8 +26,9 @@ export const NavbarContainer = styled.nav`
 export const LeftContainer = styled.div`
   flex: 70%;
   display: flex;
+
   align-items: center;
-  padding-left: 5%;
+  padding: 10px 20px;
 `;
 
 export const RightContainer = styled.div`
@@ -37,12 +45,15 @@ export const NavbarInnerContainer = styled.div`
 `;
 
 export const OpenLinksBtn = styled.button`
+  display: flex;
+  padding: 20px;
   width: 70px;
   height: 50px;
   background: none;
   border: none;
-  color: white;
+  color: #000;
   font-size: 2.5rem;
+
   cursor: pointer;
 
   @media screen and (min-width: 730px) {
@@ -65,10 +76,10 @@ export const NavbarLinkContainer = styled.div`
 `;
 
 export const NavbarLink = styled(Link)`
-  color: white;
+  color: #000;
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   margin: 10px 25px;
   cursor: pointer;
@@ -85,13 +96,12 @@ export const NavbarLink = styled(Link)`
 export const LogoLink = styled(Link)``;
 
 export const NavbarLinkExtended = styled(Link)`
-  color: white;
+  color: #000;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2rem;
   text-decoration: none;
   margin: 40px 0;
-  text-shadow: 2px 2px #000;
 
   &:hover {
     text-decoration: underline;
