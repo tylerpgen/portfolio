@@ -9,11 +9,7 @@ const Projects = (props) => {
   return (
     <Container>
       <ProjectContainer>
-        <ImageLink
-          href="https://ln-training.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <ImageLink href={props.link} target="_blank" rel="noopener noreferrer">
           <ProjectImage src={props.img} />
         </ImageLink>
       </ProjectContainer>

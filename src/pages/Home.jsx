@@ -120,7 +120,7 @@ const Home = () => {
           <GitHubIcon style={{ fontSize: 55 }} />
         </IconLink>
         <IconLink
-          href="https://github.com/tylerpgen"
+          href="https://www.linkedin.com/in/tylergener13/"
           target="_blank"
           rel="noreferrer"
         >
