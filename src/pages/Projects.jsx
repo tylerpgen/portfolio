@@ -4,7 +4,20 @@ import LnLogo from "../assets/ln.png";
 import YeLogo from "../assets/ye.png";
 import ToDo from "../assets/todo.png";
 import Shoe from "../assets/shoe.png";
-import { ProjectContainer } from "../styles/ProjectCard.style";
+
+const ProjectContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 20px;
+  padding: 10px 0;
+  flex-direction: column;
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    margin: 20px 20px;
+  }
+`;
 
 const Container = styled.div`
   width: 100%;
@@ -77,6 +90,7 @@ const DescContainer = styled.div`
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
+  line-height: 1.5;
 `;
 const Desc = styled.p`
   font-family: "Inter", sans-serif;
@@ -96,7 +110,9 @@ const Projects = () => {
         <Header>Work</Header>
         <DescContainer>
           <Desc>
-            Projects I have created on my journey to becoming a web developer !
+            Projects I have created on my journey to becoming a web developer !{" "}
+            <br />
+            These projects have all been made using HTML, CSS, JS, and React.
           </Desc>
         </DescContainer>
       </HeaderContainer>

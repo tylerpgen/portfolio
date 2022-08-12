@@ -3,7 +3,7 @@ import { FaHtml5, FaCss3, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
   animation-delay: 0.7s;
@@ -79,8 +79,8 @@ const InfoContainer = styled.div`
   line-height: 1.5;
 
   @media screen and (min-width: 780px) {
-    padding: 0 100px;
-    margin-top: 25px;
+    padding: 0 400px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -97,23 +97,27 @@ const Info = styled.p`
 `;
 
 const IconContainer = styled.div`
-  width: 100%;
   display: flex;
-  align-items: center;
+  width: 100%;
+
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   margin-top: 20px;
-  margin-left: 90px;
 
   @media screen and (min-width: 780px) {
     flex-direction: row;
-    margin-top: 80px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 `;
 
-const Icon = styled.svg`
+const Icon = styled.image`
+  width: 50%;
   color: #000;
   font-size: 7rem;
+  justify-content: space-between;
 `;
 
 const About = () => {
@@ -124,17 +128,12 @@ const About = () => {
       </HeaderContainer>
       <InfoContainer>
         <Info>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto
-          distinctio ratione ut nulla placeat, repudiandae quam debitis
-          architecto, modi blanditiis consequuntur aspernatur facere dolor porro
-          sit soluta accusamus beatae? Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Dicta iusto distinctio ratione ut nulla placeat,
-          repudiandae quam debitis architecto, modi blanditiis consequuntur
-          aspernatur facere dolor porro sit soluta accusamus beatae? Lorem,
-          ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto
-          distinctio ratione ut nulla placeat, repudiandae quam debitis
-          architecto, modi blanditiis consequuntur aspernatur facere dolor porro
-          sit soluta accusamus beatae?
+          Hello! <br />
+          My name is Tyler Gener and I'm currently looking to become a front-end
+          developer. I recently graduated from UC Santa Barbara with a Bachelor
+          of Science in Psychology and Brain Sciences. I have been learning
+          HTML, CSS, Javascript, React, and more for over a year and have loved
+          every step of the learning process.
         </Info>
       </InfoContainer>
       <HeaderContainer>
