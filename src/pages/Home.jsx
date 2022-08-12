@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
 
 const Container = styled.div`
   width: 100%;
@@ -117,14 +116,14 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <GitHubIcon style={{ fontSize: 55 }} />
+          <FaGithubAlt style={{ fontSize: 55 }} />
         </IconLink>
         <IconLink
           href="https://www.linkedin.com/in/tylergener13/"
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedInIcon style={{ fontSize: 55 }} />
+          <FaLinkedin style={{ fontSize: 55 }} />
         </IconLink>
       </IconLinkContainer>
     </Container>
