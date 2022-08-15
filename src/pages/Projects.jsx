@@ -112,7 +112,8 @@ const Projects = () => {
           <Desc>
             Projects I have created on my journey to becoming a web developer !{" "}
             <br />
-            These projects have all been made using HTML, CSS, JS, and React.
+            <br />
+            These projects have all been made using HTML, CSS, JS, and ReactJS.
           </Desc>
         </DescContainer>
       </HeaderContainer>

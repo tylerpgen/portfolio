@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaHtml5, FaCss3, FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 const Container = styled.div`
   width: 100%;
@@ -142,9 +142,9 @@ const About = () => {
           <Info>
             I have been creating fully responsive front-end projects for over a
             year and always looking to improve my skill set. I have a strong
-            passion for learning and great attention to detail. The languages I
-            currently utilize include HTML, CSS, and Javascript. I am also well
-            versed in using the ReactJS framework. <br />
+            passion for learning and great attention to detail. The programming
+            tools I currently utilize include HTML, CSS, Javascript, ReactJS,
+            and Git. <br />
             I'm always learning and looking to expand my programming arsenal!
           </Info>
         </InfoContainer>
@@ -161,6 +161,9 @@ const About = () => {
         </Icon>
         <Icon>
           <FaReact />
+        </Icon>
+        <Icon>
+          <FaGitAlt />
         </Icon>
       </IconContainer>
     </Container>
