@@ -140,17 +140,12 @@ const About = () => {
         <Header>Skills</Header>
         <InfoContainer>
           <Info>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            iusto distinctio ratione ut nulla placeat, repudiandae quam debitis
-            architecto, modi blanditiis consequuntur aspernatur facere dolor
-            porro sit soluta accusamus beatae? Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Dicta iusto distinctio ratione ut
-            nulla placeat, repudiandae quam debitis architecto, modi blanditiis
-            consequuntur aspernatur facere dolor porro sit soluta accusamus
-            beatae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta iusto distinctio ratione ut nulla placeat, repudiandae quam
-            debitis architecto, modi blanditiis consequuntur aspernatur facere
-            dolor porro sit soluta accusamus beatae?
+            I have been creating fully responsive front-end projects for over a
+            year and always looking to improve my skill set. I have a strong
+            passion for learning and great attention to detail. The languages I
+            currently utilize include HTML, CSS, and Javascript. I am also well
+            versed in using the ReactJS framework. <br />
+            I'm always learning and looking to expand my programming arsenal!
           </Info>
         </InfoContainer>
       </HeaderContainer>

@@ -27,7 +27,6 @@ const Navbar = styled.div`
 const NavbarLinkContainer = styled.div`
   width: 100%;
   display: flex;
-  padding: 10px;
   text-align: center;
   position: relative;
 
@@ -93,10 +92,7 @@ const AnimatedNav = () => {
             About
           </NavbarLink>
           <NavbarLink onClick="window.location.reload();" to="/projects">
-            Projects
-          </NavbarLink>
-          <NavbarLink onClick="window.location.reload();" to="/contact">
-            Contact
+            Work
           </NavbarLink>
         </NavbarLinkContainer>
       </Navbar>

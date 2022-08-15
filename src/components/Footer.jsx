@@ -3,7 +3,7 @@ import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
 const Container = styled.div`
   width: 100%;
   height: 120px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 `;
 
 const FooterContainer = styled.div`
