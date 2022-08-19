@@ -4,6 +4,7 @@ import LnLogo from "../assets/ln.png";
 import YeLogo from "../assets/ye.png";
 import ToDo from "../assets/todo.png";
 import Shoe from "../assets/shoe.png";
+import Flash from "../assets/flash.png";
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -113,7 +114,8 @@ const Projects = () => {
             Projects I have created on my journey to becoming a web developer !{" "}
             <br />
             <br />
-            These projects have all been made using HTML, CSS, JS, and ReactJS.
+            These projects have all been made using HTML, CSS, Javascript, and
+            ReactJS.
           </Desc>
         </DescContainer>
       </HeaderContainer>
@@ -128,6 +130,10 @@ const Projects = () => {
           img={ToDo}
         />
         <ProjectCard link="https://game-3ffe5.web.app/" img={Shoe} />
+        <ProjectCard
+          link="https://tylerpgen.github.io/flashcard-app/"
+          img={Flash}
+        />
       </ProjectContainer>
     </Container>
   );

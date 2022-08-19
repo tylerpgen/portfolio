@@ -129,7 +129,7 @@ const About = () => {
       <InfoContainer>
         <Info>
           Hello! <br />
-          My name is Tyler Gener and I'm currently looking to become a front-end
+          My name is Tyler Gener and I'm currently a front-end website
           developer. I recently graduated from UC Santa Barbara with a Bachelor
           of Science in Psychology and Brain Sciences. I have been learning
           HTML, CSS, Javascript, React, and more for over a year and have loved
