@@ -5,6 +5,7 @@ import YeLogo from "../assets/ye.png";
 import ToDo from "../assets/todo.png";
 import Shoe from "../assets/shoe.png";
 import Flash from "../assets/flash.png";
+import Type from "../assets/typing.png";
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -120,7 +121,11 @@ const Projects = () => {
         </DescContainer>
       </HeaderContainer>
       <ProjectContainer>
-        <ProjectCard link="https://ln-training.com/" img={LnLogo} />
+        <ProjectCard
+          title="Personal Trainer"
+          link="https://ln-training.com/"
+          img={LnLogo}
+        />
         <ProjectCard
           link="https://tylerpgen.github.io/kanye-site/"
           img={YeLogo}
@@ -133,6 +138,10 @@ const Projects = () => {
         <ProjectCard
           link="https://tylerpgen.github.io/flashcard-app/"
           img={Flash}
+        />
+        <ProjectCard
+          link="https://tylerpgen.github.io/tyler-type/"
+          img={Type}
         />
       </ProjectContainer>
     </Container>

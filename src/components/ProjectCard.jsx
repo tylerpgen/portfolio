@@ -9,7 +9,6 @@ const ProjectContainer = styled.div`
   margin: 10px 20px;
   padding: 10px 0;
   flex-direction: column;
-
   @media screen and (min-width: 1000px) {
     flex-direction: row;
     margin: 20px 20px;
@@ -17,12 +16,12 @@ const ProjectContainer = styled.div`
 `;
 
 const ProjectImage = styled.img`
+  position: relative;
   width: 180px;
   height: 180px;
   background-color: white;
   border-radius: 50%;
   transition: all 0.3s ease-in;
-
   &:hover {
     transform: scale(1.1);
   }
