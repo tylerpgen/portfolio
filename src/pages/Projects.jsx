@@ -6,7 +6,7 @@ import ToDo from "../assets/todo.png";
 import Shoe from "../assets/shoe.png";
 import Flash from "../assets/flash.png";
 import Type from "../assets/typing.png";
-
+import Movie from "../assets/movie.png";
 const ProjectContainer = styled.div`
   display: flex;
   align-items: center;
@@ -142,6 +142,10 @@ const Projects = () => {
         <ProjectCard
           link="https://tylerpgen.github.io/tyler-type/"
           img={Type}
+        />
+        <ProjectCard
+          link="https://tylerpgen.github.io/movie-theatre/"
+          img={Movie}
         />
       </ProjectContainer>
     </Container>
