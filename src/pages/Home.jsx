@@ -1,48 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
+import { Fade } from "@mui/material";
 
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  opacity: 0;
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-  -webkit-animation: fadeIn 1s ease-in 0s 1 normal forwards; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation: fadeIn 1s ease-in 0s 1 normal forwards;
-  animation: fadeIn 1s ease-in 0s 1 normal forwards;
-
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-moz-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 `;
 
 const HeaderContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 `;
 
@@ -103,30 +73,24 @@ const IconLink = styled.a`
 
 const Home = () => {
   return (
-    <Container>
-      <HeaderContainer>
-        <NameHeader>TYLER GENER</NameHeader>
-        <TagHeader>
-          <i>Front End Developer</i>
-        </TagHeader>
-      </HeaderContainer>
-      <IconLinkContainer>
-        <IconLink
-          href="https://github.com/tylerpgen"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithubAlt style={{ fontSize: 55 }} />
-        </IconLink>
-        <IconLink
-          href="https://www.linkedin.com/in/tylergener13/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaLinkedin style={{ fontSize: 55 }} />
-        </IconLink>
-      </IconLinkContainer>
-    </Container>
+    <Fade in={true} timeout={2000}>
+      <Container>
+        <HeaderContainer>
+          <NameHeader>TYLER GENER</NameHeader>
+          <TagHeader>
+            <i>Web Developer</i>
+          </TagHeader>
+        </HeaderContainer>
+        <IconLinkContainer>
+          <IconLink href="https://github.com/tylerpgen" target="_blank" rel="noreferrer">
+            <FaGithubAlt style={{ fontSize: 55 }} />
+          </IconLink>
+          <IconLink href="https://www.linkedin.com/in/tylergener13/" target="_blank" rel="noreferrer">
+            <FaLinkedin style={{ fontSize: 55 }} />
+          </IconLink>
+        </IconLinkContainer>
+      </Container>
+    </Fade>
   );
 };
 

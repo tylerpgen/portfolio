@@ -12,7 +12,5 @@ a {
 }
 
 body {
-  background: #00416a;
-  background: -webkit-linear-gradient(to bottom, #e4e5e6, #00416a);
-  background: linear-gradient(to bottom, #e4e5e6, #00416a);
+  background-color: #bbe1fa;
 }
