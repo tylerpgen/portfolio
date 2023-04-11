@@ -3,11 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material/styles";
 import Home from "./pages/Home";
-// import About from "./pages/About";
 import Projects from "./pages/Projects";
 import NewNavbar from "./components/NewNav";
 import NewAbout from "./pages/NewAbout";
-// import AnimatedNav from "./components/AnimatedNav";
 import Footer from "./components/Footer";
 
 const theme = createTheme();

@@ -8,6 +8,12 @@ import Flash from "../assets/flash.png";
 import Type from "../assets/typing.png";
 import Movie from "../assets/movie.png";
 import { Fade } from "@mui/material";
+
+const Container = styled.div`
+  width: 100%;
+  min-height: 100vh;
+`;
+
 const ProjectContainer = styled.div`
   display: flex;
   align-items: center;
@@ -20,11 +26,6 @@ const ProjectContainer = styled.div`
     flex-direction: row;
     margin: 20px 20px;
   }
-`;
-
-const Container = styled.div`
-  width: 100%;
-  height: 100vh;
 `;
 
 const HeaderContainer = styled.div`
