@@ -7,6 +7,7 @@ import Shoe from "../assets/shoe.png";
 import Flash from "../assets/flash.png";
 import Type from "../assets/typing.png";
 import Movie from "../assets/movie.png";
+import { Fade } from "@mui/material";
 const ProjectContainer = styled.div`
   display: flex;
   align-items: center;
@@ -24,41 +25,6 @@ const ProjectContainer = styled.div`
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-  -webkit-animation: fadeIn 1s ease-in 0s 1 normal forwards; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation: fadeIn 1s ease-in 0s 1 normal forwards;
-  animation: fadeIn 1s ease-in 0s 1 normal forwards;
-
-  @media screen and (max-width: 780px) {
-    height: auto;
-  }
-
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-moz-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 `;
 
 const HeaderContainer = styled.div`
@@ -107,48 +73,29 @@ const Desc = styled.p`
 
 const Projects = () => {
   return (
-    <Container>
-      <HeaderContainer>
-        <Header>Work</Header>
-        <DescContainer>
-          <Desc>
-            Projects I have created on my journey to becoming a web developer !{" "}
-            <br />
-            <br />
-            These projects have all been made using HTML, CSS, Javascript, and
-            ReactJS.
-          </Desc>
-        </DescContainer>
-      </HeaderContainer>
-      <ProjectContainer>
-        <ProjectCard
-          title="Personal Trainer"
-          link="https://ln-training.com/"
-          img={LnLogo}
-        />
-        <ProjectCard
-          link="https://tylerpgen.github.io/kanye-site/"
-          img={YeLogo}
-        />
-        <ProjectCard
-          link="https://tylerpgen.github.io/to-do-list/"
-          img={ToDo}
-        />
-        <ProjectCard link="https://game-3ffe5.web.app/" img={Shoe} />
-        <ProjectCard
-          link="https://tylerpgen.github.io/flashcard-app/"
-          img={Flash}
-        />
-        <ProjectCard
-          link="https://tylerpgen.github.io/tyler-type/"
-          img={Type}
-        />
-        <ProjectCard
-          link="https://tylerpgen.github.io/movie-theatre/"
-          img={Movie}
-        />
-      </ProjectContainer>
-    </Container>
+    <Fade in={true} timeout={1000}>
+      <Container>
+        <HeaderContainer>
+          <Header>Work</Header>
+          <DescContainer>
+            <Desc>
+              Projects I have created on my journey to becoming a web developer ! <br />
+              <br />
+              These projects have all been made using HTML, CSS, Javascript, and ReactJS.
+            </Desc>
+          </DescContainer>
+        </HeaderContainer>
+        <ProjectContainer>
+          <ProjectCard title="Personal Trainer" link="https://ln-training.com/" img={LnLogo} />
+          <ProjectCard link="https://tylerpgen.github.io/kanye-site/" img={YeLogo} />
+          <ProjectCard link="https://tylerpgen.github.io/to-do-list/" img={ToDo} />
+          <ProjectCard link="https://game-3ffe5.web.app/" img={Shoe} />
+          <ProjectCard link="https://tylerpgen.github.io/flashcard-app/" img={Flash} />
+          <ProjectCard link="https://tylerpgen.github.io/tyler-type/" img={Type} />
+          <ProjectCard link="https://tylerpgen.github.io/movie-theatre/" img={Movie} />
+        </ProjectContainer>
+      </Container>
+    </Fade>
   );
 };
 
