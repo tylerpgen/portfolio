@@ -3,7 +3,7 @@ import { FaHtml5, FaCss3, FaReact, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
   animation-delay: 0.7s;
@@ -129,22 +129,18 @@ const About = () => {
       <InfoContainer>
         <Info>
           Hello! <br />
-          My name is Tyler Gener and I'm currently a front-end website
-          developer. I recently graduated from UC Santa Barbara with a Bachelor
-          of Science in Psychology and Brain Sciences. I have been learning
-          HTML, CSS, Javascript, React, and more for over a year and have loved
-          every step of the learning process.
+          My name is Tyler Gener and I'm currently a front-end website developer. I recently graduated from UC Santa
+          Barbara with a Bachelor of Science in Psychology and Brain Sciences. I have been learning HTML, CSS,
+          Javascript, React, and more for over a year and have loved every step of the learning process.
         </Info>
       </InfoContainer>
       <HeaderContainer>
         <Header>Skills</Header>
         <InfoContainer>
           <Info>
-            I have been creating fully responsive front-end projects for over a
-            year and always looking to improve my skill set. I have a strong
-            passion for learning and great attention to detail. The programming
-            tools I currently utilize include HTML, CSS, Javascript, ReactJS,
-            and Git. <br />
+            I have been creating fully responsive front-end projects for over a year and always looking to improve my
+            skill set. I have a strong passion for learning and great attention to detail. The programming tools I
+            currently utilize include HTML, CSS, Javascript, ReactJS, and Git. <br />
             I'm always learning and looking to expand my programming arsenal!
           </Info>
         </InfoContainer>

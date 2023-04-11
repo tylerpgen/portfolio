@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
+
+const currentyear = new Date().getFullYear();
+
 const Container = styled.div`
   width: 100%;
-  height: 120px;
-  background: rgba(0, 0, 0, 0.1);
+  height: 100px;
+  background-color: #1e212d;
 `;
 
 const FooterContainer = styled.div`
@@ -18,9 +21,9 @@ const FooterContainer = styled.div`
 const IconLinkContainer = styled.div``;
 
 const IconLink = styled.a`
-  color: #000;
+  color: #fff;
   &:visited {
-    color: black;
+    color: #fff;
   }
   font-size: 1.5rem;
   margin: 90px 30px;
@@ -31,7 +34,7 @@ const IconLink = styled.a`
 `;
 
 const FooterEmail = styled.a`
-  color: #010101;
+  color: #fff;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -55,39 +58,27 @@ const CopyrightContainer = styled.div``;
 const Copyright = styled.h3`
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 0.89rem;
-  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.6rem;
+  color: #fff;
 `;
 
 const Footer = () => {
   return (
     <Container>
       <FooterContainer>
-        <FooterEmail
-          href="mailto:tylergen33@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <FooterEmail href="mailto:tylergen33@gmail.com" target="_blank" rel="noreferrer">
           tylergen33@gmail.com
         </FooterEmail>
         <IconLinkContainer>
-          <IconLink
-            href="https://github.com/tylerpgen"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <IconLink href="https://github.com/tylerpgen" target="_blank" rel="noreferrer">
             <FaGithubAlt />
           </IconLink>
-          <IconLink
-            href="https://www.linkedin.com/in/tylergener13/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <IconLink href="https://www.linkedin.com/in/tylergener13/" target="_blank" rel="noreferrer">
             <FaLinkedin />
           </IconLink>
         </IconLinkContainer>
         <CopyrightContainer>
-          <Copyright>© Tyler Gener</Copyright>
+          <Copyright>TG ©{currentyear}</Copyright>
         </CopyrightContainer>
       </FooterContainer>
     </Container>
