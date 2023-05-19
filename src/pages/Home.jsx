@@ -14,6 +14,10 @@ const HeaderContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 2000px) {
+    margin-top: 150px;
+  }
 `;
 
 const NameHeader = styled.h1`

@@ -4,6 +4,7 @@ import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material/styles";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import NewProjects from "./pages/NewProjects";
 import NewNavbar from "./components/NewNav";
 import NewAbout from "./pages/NewAbout";
 import Footer from "./components/Footer";
@@ -19,7 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<NewAbout />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<NewProjects />} />
             <Route path="/contact" />
           </Routes>
           <Footer />
