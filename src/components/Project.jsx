@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Link, Paper, Typography } from "@mui/material";
+import { Container, Link, Paper, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import { useTheme } from "@emotion/react";
 
@@ -17,7 +17,9 @@ const StyledImage = styled("img")(({ theme }) => ({
 
 const Project = ({ project }) => {
   const theme = useTheme();
+
   const { name, desc, image, link } = project;
+
   return (
     <Container maxWidth="lg" sx={{ marginBottom: "50px", marginTop: "50px" }}>
       <Paper elevation={5} sx={{ p: 2, margin: "0", backgroundColor: "#FFF" }}>

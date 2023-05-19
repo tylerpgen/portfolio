@@ -25,6 +25,6 @@ export const projectData = [
     name: "Typing Test Game",
     desc: "An interactive web game that utilizes a third-party API to generate random quotes for users to practice their typing skills. Leveraging JavaScript, I implemented functionality that dynamically changes the styles of various components, enhancing user engagement and interactivity. This allows users to have an immersive experience while typing out the quotes and improves their typing abilities in a fun and engaging way.",
     image: TG,
-    link: "https://tylerpgen.github.io/flashcard-app/",
+    link: "https://tylerpgen.github.io/tyler-type/",
   },
 ];

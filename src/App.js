@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material/styles";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
 import NewProjects from "./pages/NewProjects";
 import NewNavbar from "./components/NewNav";
 import NewAbout from "./pages/NewAbout";
