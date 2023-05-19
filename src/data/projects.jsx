@@ -5,7 +5,7 @@ import TG from "../assets/typingtest.jpg";
 export const projectData = [
   {
     name: "Personal Trainer Company Site",
-    desc: "A website for a personal trainer that features an Amazon-style shop front product page that utilizes the client's affiliate links. The website is fully responsive, ensuring a great user experience on various devices. I actively maintained and upgraded the project based on client requests to ensure optimal functionality and engagement for users.",
+    desc: "A website for a personal trainer that features an Amazon-style shop front product page that utilizes the client's affiliate links. The website is fully responsive, ensuring a great user experience on various devices. I actively maintain and upgrade the project based on client requests to ensure optimal functionality and engagement for users.",
     image: LNSS,
     link: "https://ln-training.com/",
   },
