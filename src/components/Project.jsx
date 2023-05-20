@@ -3,7 +3,7 @@ import { Container, Link, Paper, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import { useTheme } from "@emotion/react";
 
-const StyledImage = styled("img")(({ theme }) => ({
+const StyledVideo = styled("video")(({ theme }) => ({
   display: "block",
   alignItems: "center",
   width: "100%",
@@ -17,8 +17,7 @@ const StyledImage = styled("img")(({ theme }) => ({
 
 const Project = ({ project }) => {
   const theme = useTheme();
-
-  const { name, desc, image, link } = project;
+  const { name, desc, link, video } = project;
 
   return (
     <Container maxWidth="lg" sx={{ marginBottom: "50px", marginTop: "50px" }}>
@@ -39,7 +38,7 @@ const Project = ({ project }) => {
         </Typography>
 
         <Link href={link} target="_blank" rel="noopener noreferrer">
-          <StyledImage src={image} alt={name} />
+          <StyledVideo src={video} alt={name} autoPlay loop muted playsInline />
         </Link>
 
         <Typography
