@@ -33,27 +33,9 @@ const IconLink = styled.a`
   }
 `;
 
-const FooterEmail = styled.a`
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  margin-bottom: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.1s ease-in;
-
-  &:hover {
-    text-decoration: underline;
-    transform: scale(1.06);
-  }
-
-  &:visited {
-    color: #010101;
-  }
+const CopyrightContainer = styled.div`
+  margin-top: 15px;
 `;
-
-const CopyrightContainer = styled.div``;
 
 const Copyright = styled.h3`
   font-family: "Inter", sans-serif;
@@ -66,9 +48,6 @@ const Footer = () => {
   return (
     <Container>
       <FooterContainer>
-        <FooterEmail href="mailto:tylergen33@gmail.com" target="_blank" rel="noreferrer">
-          tylergen33@gmail.com
-        </FooterEmail>
         <IconLinkContainer>
           <IconLink href="https://github.com/tylerpgen" target="_blank" rel="noreferrer">
             <FaGithubAlt />
