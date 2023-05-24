@@ -65,9 +65,10 @@ const Home = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
-              marginTop: "75px",
+              marginTop: "170px",
               [theme.breakpoints.up("lg")]: {
                 justifyContent: "center",
+                marginTop: "75px",
               },
             }}
           >
