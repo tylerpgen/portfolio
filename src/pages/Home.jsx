@@ -1,68 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { FaGithubAlt, FaLinkedin } from "react-icons/fa";
-import { Fade } from "@mui/material";
+import { Container, Fade, Paper, Typography } from "@mui/material";
+import { useTheme } from "@emotion/react";
 
-const Container = styled.div`
-  width: 100%;
-  height: 100vh;
-`;
-
-const HeaderContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (min-width: 2000px) {
-    margin-top: 150px;
-  }
-`;
-
-const NameHeader = styled.h1`
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 600;
-  font-size: 3.5rem;
-  color: #000;
-  letter-spacing: 5px;
-  padding: 10px;
-  margin-top: 180px;
-
-  @media screen and (min-width: 800px) {
-    font-size: 7.5rem;
-    margin-top: 200px;
-  }
-
-  @media screen and (max-width: 400px) {
-    font-size: 3rem;
-    margin-top: 150px;
-  }
-
-  @media screen and (max-width: 325px) {
-    font-size: 2rem;
-    margin-top: 80px;
-  }
-`;
-
-const TagHeader = styled.h2`
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin-top: 30px;
-`;
-
-const IconLinkContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  margin: 75px 50px;
-
-  @media screen and (min-width: 800px) {
-    justify-content: center;
-  }
-`;
 const IconLink = styled.a`
   color: #000;
 
@@ -76,23 +17,100 @@ const IconLink = styled.a`
 `;
 
 const Home = () => {
+  const theme = useTheme();
   return (
     <Fade in={true} timeout={2000}>
-      <Container>
-        <HeaderContainer>
-          <NameHeader>TYLER GENER</NameHeader>
-          <TagHeader>
-            <i>Web Developer</i>
-          </TagHeader>
-        </HeaderContainer>
-        <IconLinkContainer>
-          <IconLink href="https://github.com/tylerpgen" target="_blank" rel="noreferrer">
-            <FaGithubAlt style={{ fontSize: 55 }} />
-          </IconLink>
-          <IconLink href="https://www.linkedin.com/in/tylergener13/" target="_blank" rel="noreferrer">
-            <FaLinkedin style={{ fontSize: 55 }} />
-          </IconLink>
-        </IconLinkContainer>
+      <Container maxWidth="xl">
+        <Container
+          align="center"
+          sx={{
+            minHeight: "100vh",
+            minWidth: "100%",
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <Typography
+            variant="h1"
+            sx={{
+              fontFamily: "Titillium Web",
+              fontWeight: "600",
+              fontSize: "3rem",
+              letterSpacing: ".22rem",
+              [theme.breakpoints.up("lg")]: {
+                fontSize: "8rem",
+                letterSpacing: "1rem",
+              },
+            }}
+          >
+            TYLER GENER
+          </Typography>
+          <Typography
+            variant="h4"
+            sx={{
+              fontFamily: "Inter",
+              fontWeight: "400",
+              fontSize: "1.5rem",
+              fontStyle: "italic",
+              marginTop: "40px",
+              letterSpacing: "0.2rem",
+            }}
+          >
+            Web Developer
+          </Typography>
+          <Container
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              marginTop: "75px",
+              [theme.breakpoints.up("lg")]: {
+                justifyContent: "center",
+              },
+            }}
+          >
+            <IconLink href="https://github.com/tylerpgen" target="_blank" rel="noreferrer">
+              <FaGithubAlt style={{ fontSize: 55 }} />
+            </IconLink>
+            <IconLink href="https://www.linkedin.com/in/tylergener13/" target="_blank" rel="noreferrer">
+              <FaLinkedin style={{ fontSize: 55 }} />
+            </IconLink>
+          </Container>
+        </Container>
+        <Container align="center" maxWidth="md" sx={{ marginBottom: "100px" }}>
+          <Paper elevation={4} sx={{ padding: "30px" }}>
+            <Typography
+              variant="h5"
+              sx={{
+                fontFamily: "Titillium Web",
+                fontSize: "2rem",
+                fontWeight: "500",
+                letterSpacing: "0.1rem",
+                [theme.breakpoints.up("lg")]: {
+                  fontSize: "3rem",
+                },
+              }}
+            >
+              Contact Info:
+            </Typography>
+            <Typography
+              variant="h5"
+              sx={{
+                fontFamily: "Inter",
+                fontSize: "1.1rem",
+                fontWeight: "500",
+                marginTop: "4px",
+                [theme.breakpoints.up("lg")]: {
+                  fontSize: "1.4rem",
+                },
+              }}
+            >
+              Email: tylergen33@gmail.com <br /> Phone: By Request
+            </Typography>
+          </Paper>
+        </Container>
       </Container>
     </Fade>
   );
