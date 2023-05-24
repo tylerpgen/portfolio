@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "@emotion/react";
-import { Box, Container, Fade, Typography } from "@mui/material";
+import { Box, Container, Fade, Link, Typography } from "@mui/material";
 import Project from "../components/Project";
 import { projectData } from "../data/projects";
 
@@ -30,6 +30,30 @@ const NewProjects = () => {
             <Project project={project} />
           </Box>
         ))}
+        <Typography
+          fontFamily="Titillium Web"
+          textAlign="center"
+          sx={{
+            fontSize: "1.8rem",
+            marginTop: "16px",
+            marginBottom: "50px",
+            [theme.breakpoints.up("lg")]: {
+              fontSize: "2rem",
+            },
+          }}
+        >
+          All of my code, including more projects currently in development, is located on my
+          <Link
+            href="https://github.com/tylerpgen"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ textDecoration: "underline", color: "black", cursor: "pointer" }}
+          >
+            {" "}
+            Github
+          </Link>{" "}
+          page!
+        </Typography>
       </Container>
     </Fade>
   );
