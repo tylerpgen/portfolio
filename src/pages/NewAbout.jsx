@@ -1,10 +1,10 @@
 import { useTheme } from "@emotion/react";
 import { Typography, Box, Fade, Paper } from "@mui/material";
 import { styled } from "@mui/system";
-
 import Portrait from "../assets/tyler.jpg";
 
 const NewAbout = () => {
+  // Theme being used for mobile breakpoints
   const theme = useTheme();
 
   const StyledBox = styled(Box)({
@@ -46,7 +46,7 @@ const NewAbout = () => {
           ABOUT
         </Typography>
         <StyledBox>
-          <PortraitPic src={Portrait}></PortraitPic>
+          <PortraitPic src={Portrait} />
           <Box
             sx={{
               width: "100%",

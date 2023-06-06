@@ -25,6 +25,8 @@ const NewProjects = () => {
         >
           Projects
         </Typography>
+
+        {/* Map used for projectData being repeatedly used in the Project component  */}
         {projectData.map((project, i) => (
           <Box key={i}>
             <Project project={project} />
