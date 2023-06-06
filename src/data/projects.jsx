@@ -2,6 +2,7 @@ import LNvideo from "../assets/lntrainingv.mp4";
 import MedicineVideo from "../assets/medicinevideo.mp4";
 import FlashVid from "../assets/flashvid.mp4";
 import TypeVid from "../assets/typevideo.mp4";
+import ShopVid from "../assets/ecommerce.mp4";
 
 export const projectData = [
   {
@@ -9,6 +10,13 @@ export const projectData = [
     desc: "A website for a personal trainer that features an Amazon-style shop front product page that utilizes the client's affiliate links. The website is fully responsive, ensuring a great user experience on various devices. I actively maintain and upgrade the project based on client requests to ensure optimal functionality and engagement for users.",
     link: "https://ln-training.com/",
     video: LNvideo,
+  },
+  {
+    name: "E-Commerce Front-End Shop",
+    desc: "This front-end project is a visually appealing web application that presents a design layout for an e-commerce store specializing in sneakers. It is fully responsive to provide a seamless user experience across various devices, ensuring that all assets are displayed correctly regardless of the screen size. The project incorporates reusable components that are both aesthetically pleasing and functional, facilitating efficient development and enabling their use in future projects. Key pages such as the login, registration, and checkout pages are thoughtfully included to provide a comprehensive shopping experience.",
+
+    link: "https://game-3ffe5.web.app/",
+    video: ShopVid,
   },
   {
     name: "Prescription Tracker Checklist",
