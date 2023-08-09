@@ -3,8 +3,14 @@ import MedicineVideo from "../assets/medicinevideo.mp4";
 import FlashVid from "../assets/flashvid.mp4";
 import TypeVid from "../assets/typevideo.mp4";
 import ShopVid from "../assets/ecommerce.mp4";
-
+import GolfVid from "../assets/18bogeys.mp4";
 export const projectData = [
+  {
+    name: "18 Bogeys Golf",
+    desc: "A dynamic web application offering user registration, login, and score creation, seamlessly integrated with a MongoDB database cluster. User-specific posts require authorized access for editing, deletion, and creation, bolstered by robust security measures to safeguard data integrity. The site guarantees an optimal user experience, adapting seamlessly to both mobile and desktop devices. Crafted using ViteJS to achieve enhanced performance and interactivity.",
+    link: "https://18bogeys.golf/",
+    video: GolfVid,
+  },
   {
     name: "Personal Trainer Company Site",
     desc: "A website for a personal trainer that features an Amazon-style shop front product page that utilizes the client's affiliate links. The website is fully responsive, ensuring a great user experience on various devices. I actively maintain and upgrade the project based on client requests to ensure optimal functionality and engagement for users.",
